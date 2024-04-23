@@ -3,8 +3,9 @@
 int mar;
 int Kg;
 
-Console.WriteLine("------------Pesca Amadora------------");
 
+void loop(){
+Console.WriteLine("------------Pesca Amadora------------");
 Console.WriteLine("Você esta em águas continentais e estuarinas: 1/sim 2/não");
 mar= Convert.ToInt32(Console.ReadLine());
 
@@ -47,4 +48,15 @@ mar= Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Pescaria dentro dos limites legais");
         }
         }
-    
+    Console.WriteLine("Você quer recomeçar o programa? [S/N]");
+    string reposta = Console.ReadLine()!;
+    if(reposta.ToUpper() == "S")
+    {
+    Console.ResetColor();
+        loop();
+    }
+    else{
+
+    }
+}
+loop();
