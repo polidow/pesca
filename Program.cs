@@ -16,9 +16,9 @@ mar= Convert.ToInt32(Console.ReadLine());
         if (Kg > 10 )
         {
             Console.ForegroundColor = ConsoleColor . Red;
-            Console.WriteLine("Pescaria excede os limites legais em águas continentais e estuarinas de 10kg. Sujeito a multa de R$ 1000,00.");
-            int multa = 1000 + (20 * )
-            Console.WriteLine();
+            Console.WriteLine("Pescaria excede os limites legais em águas continentais e estuarinas de 10kg. Sujeito a multa de R$ 1000,00., com acréscimo de R$20,00 por quilo excedido.");
+            int multa = 1000 + (20 * (Kg - 10));
+            Console.WriteLine($"Sujeito a multa de R$: {multa}");
         }
 
         else 
@@ -36,7 +36,9 @@ mar= Convert.ToInt32(Console.ReadLine());
         if (Kg > 15)
         {
             Console.ForegroundColor = ConsoleColor . Red;
-            Console.WriteLine("Pescaria excede os limites legais em águas continentais e estuarinas de 10kg. Sujeito a multa de R$ 1000,00.");
+            Console.WriteLine("Pescaria excede os limites legais em águas marinhas de 15kg. Sujeito a multa de R$ 1000,00.");
+            int multa = 1000 + (20 * (Kg - 15));
+            Console.WriteLine($"Sujeito a multa de R$: {multa}");
         }
 
         else 
